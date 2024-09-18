@@ -1,0 +1,142 @@
+.contacto {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #13171c;
+  color: whitesmoke;
+  padding: 40px 40px 200px 40px;
+}
+
+.contacto-titulo {
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.nombre-label,
+.email-label,
+.mensaje-label {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.nombre-input,
+.email-input,
+.mensaje-textarea {
+  border: none;
+  border-radius: 15px;
+  background-color: #393e4680;
+  width: 313px;
+  caret-color: #ffffff;
+}
+
+.nombre-input,
+.email-input {
+  height: 59px;
+  margin-bottom: 30px;
+}
+.nombre-input::placeholder,
+.email-input::placeholder,
+.mensaje-textarea::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #eeeeee80;
+  padding: 16px 24px;
+  font-family: "Poppins", sans-serif;
+}
+
+.mensaje-textarea {
+  height: 280px;
+  margin-bottom: 25px;
+  padding: 20px;
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+}
+
+.mensaje-textarea {
+  height: 280px;
+  margin-bottom: 25px;
+  padding: 20px;
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+}
+
+.nombre-input:not(:placeholder-shown),
+.email-input:not(:placeholder-shown),
+.mensaje-textarea:not(:placeholder-shown) {
+  color: whitesmoke;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 20px;
+}
+
+#seccion-contacto {
+  width: 100%;
+}
+
+@media (min-width: 376px) and (max-width: 1440px) {
+  .contacto {
+    padding: 260px 96px 250px 100px;
+  }
+  .contacto-container {
+    display: flex;
+    gap: 200px;
+  }
+
+  .contacto-titulo {
+    font-size: 64px;
+  }
+  .form-group-input {
+    display: flex;
+    gap: 24px;
+  }
+
+  .mensaje-textarea {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contacto {
+    padding: 260px 96px 250px 100px;
+  }
+  .contacto-container {
+    display: flex;
+    gap: 200px;
+  }
+
+  .contacto-titulo {
+    font-size: 64px;
+  }
+  .form-group-input {
+    display: flex;
+    gap: 24px;
+  }
+
+  .mensaje-textarea {
+    width: 100%;
+  }
+}
+
+#resultado {
+  display: none;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background-color: #f8f8f8;
+  color: #333;
+  font-size: 16px;
+  width: 100%;
+}

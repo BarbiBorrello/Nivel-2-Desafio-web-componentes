@@ -1,0 +1,138 @@
+.hero {
+  width: 100%;
+}
+
+.hero-container {
+  width: 100%;
+  height: auto;
+  background-color: #13171c;
+  padding: 40px 30px;
+}
+
+.hero-titulo {
+  font-size: 42px;
+  font-weight: 700;
+  color: whitesmoke;
+  text-shadow: 1px 1px 2px gray, 0 0 1em black, 0 0 0.2em gray;
+  margin-bottom: 30px;
+}
+
+.barbi {
+  color: #00adb5;
+  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em gray;
+}
+
+.hero-description {
+  font-size: 18px;
+  font-weight: 400;
+  color: whitesmoke;
+  margin: 0px 0px 40px 0px;
+}
+
+.hero-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.hero-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (min-width: 376px) and (max-width: 1440px) {
+  .hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 260px 125px;
+    max-height: 935px;
+    gap: 50px
+  }
+
+  .hero-text-container {
+    flex: 1;
+  }
+
+  .hero-titulo {
+    flex: 1;
+    margin-right: 10px;
+    font-size: 64px;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  .hero-description {
+    margin: 0;
+    width: 400px;
+    height: auto;
+  }
+
+  .hero-img-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .hero-img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 260px 125px;
+    max-height: 935px;
+  }
+
+  .hero-text-container {
+    flex: 1;
+  }
+
+  .hero-titulo {
+    flex: 1;
+    margin-right: 10px;
+    font-size: 64px;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  .hero-description {
+    margin: 0;
+    width: 400px;
+    height: auto;
+  }
+
+  .hero-img-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .hero-img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}

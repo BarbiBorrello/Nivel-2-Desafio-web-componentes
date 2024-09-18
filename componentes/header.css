@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.header {
+  padding: 30px 20px;
+}
+
+.header,
+.boton-abrir,
+.boton-abrir-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #13171c;
+}
+
+.boton-abrir {
+  border: none;
+  width: 40px;
+  height: auto;
+}
+
+.boton-abrir-img {
+  border: solid 2px whitesmoke;
+  border-radius: 2px;
+}
+
+.boton-cerrar {
+  border: none;
+  width: 52px;
+  height: auto;
+  background-color: #000000;
+}
+
+.menu-contenido {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000000;
+  z-index: 3;
+}
+
+.boton-cerrar-container {
+  position: relative;
+  top: 15px;
+  left: 320px;
+  width: 40px;
+  height: 40px;
+}
+
+.menu-contenido {
+  display: none;
+}
+
+.menu-contenido-links,
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 80px 100px 40px;
+  width: 100%;
+}
+
+.menu-list {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  list-style: none;
+  margin-top: 25px;
+}
+
+.menu-link {
+  font-weight: 500;
+  font-size: 42px;
+  color: #eeeeee;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.menu-contenido-linksD {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  .boton-abrir {
+    display: none;
+  }
+  .boton-cerrar-container {
+    display: none;
+  }
+  .header {
+    padding: 40px 80px;
+    border-bottom: 2px solid #eeee;
+  }
+  .menu-contenido-linksD {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .menu-listD {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+  }
+
+  .menu-itemD {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .menu-linkD {
+    font-weight: 400;
+    font-size: 18px;
+    color: #eeeeee;
+    text-decoration: none;
+  }
+}
