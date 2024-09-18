@@ -51,6 +51,7 @@ const manejarEnvioFormulario = (event) => {
   fetch("https://apx.school/api/utils/email-to-student", {
     method: "POST",
     headers: { "content-type": "application/json" },
+    mode: "no-cors",
     body: JSON.stringify({
       to: email,
       message: `Nombre: ${nombre}\nMensaje: ${mensaje}`,
