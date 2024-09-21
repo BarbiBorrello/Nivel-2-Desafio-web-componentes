@@ -39,10 +39,13 @@ const agregarTitulos = async () => {
       }
     }
 
+    console.log(path);
+
     if (path === "/portfolio.html") {
       const portfolioContainer = document.querySelector(
         ".portfolio-titulos-container"
       );
+
       const template = document.getElementById("portfolio-titulo");
 
       if (portfolioContainer && template) {
