@@ -21,7 +21,10 @@ const agregarTitulos = async () => {
 
     const path = window.location.pathname;
 
-    if (path === "/servicios.html" || path === "/index.html") {
+    if (
+      path === "/Nivel-2-Desafio-web-componentes/servicios.html" ||
+      path === "/index.html"
+    ) {
       const serviciosContainer = document.querySelector(
         ".servicios-titulos-container"
       );
@@ -41,7 +44,7 @@ const agregarTitulos = async () => {
 
     console.log(path);
 
-    if (path === "/portfolio.html") {
+    if (path === "/Nivel-2-Desafio-web-componentes/portfolio.html") {
       const portfolioContainer = document.querySelector(
         ".portfolio-titulos-container"
       );
